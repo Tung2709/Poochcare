@@ -6,10 +6,59 @@
   }
   html,
   body {
-	font-family: "Nunito", sans-serif;
 	color: #404040;
-	font-size: 1rem;
-	line-height: 1.5;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   /* HEADER */
+  header.mainHeader{
+    width: 1349px;
+    background-color: #fff;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    padding: 0;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+  }
+
+  .fixedTop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  @media (min-width: 992px){
+    .container {
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
+
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px){
+  .container {
+  max-width: 1200px;}
+}
+
+
