@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poochcare Animals and pets – Just another RoverThemes Demo Sites site</title>
+    <title>
+      Poochcare Animals and pets – Just another RoverThemes Demo Sites site
+    </title>
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -42,14 +44,19 @@
       crossorigin="anonymous"
     />
 
+    <!-- THEME LIGHT AND DARK -->
+    <!-- <link rel="stylesheet" href="./js/theme.js"> -->
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body id="myBody">
     <header id="siteHeader" class="mainHeader fixedTop">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Pooch Care</a>
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="https://wp.w3layouts.com/poochcare/"
+            >Pooch Care</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -78,7 +85,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown menu-item-has-children">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -103,10 +110,48 @@
 					  <a class="nav-link disabled">Disabled</a>
 					</li> -->
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				  </form> -->
+
+            <ul class="navbar-nav searchRight mt-lg-0 mt-2">
+              <li class="nav-item navSearch">
+                <a href="#search" class="btn searchIcon">
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                </a>
+              </li>
+              <div id="search" class="pop-overlay">
+                <div class="searchPopup">
+                  <form action="https://wp.w3layouts.com/poochcare/" class="d-sm-flex" >
+                    <input
+                      
+                      type="search"
+                      placeholder="Search..."
+                      aria-label="Search"
+                      required="required"
+                      autofocus
+                    />
+                    <button
+                      class="btn btn-outline-success my-2 my-sm-0"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                    <a class="close" href="#url">×</a>
+                  </form>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="mobile-position DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
           </div>
         </nav>
       </div>
@@ -133,6 +178,9 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+
+    <script src="./js/theme.js"></script>
 
     <!-- WOW JS -->
     <script
