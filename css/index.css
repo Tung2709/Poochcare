@@ -25,6 +25,7 @@ body {
 
 .fixedTop {
   position: fixed;
+  display: inline-block;
   top: 0;
   right: 0;
   left: 0;
@@ -33,7 +34,7 @@ body {
 
 /* HEADER */
 header.mainHeader {
-  width: 1349px;
+  /* width: 1349px; */
   background-color: #fff;
   height: 90px;
   display: grid;
@@ -119,13 +120,12 @@ nav ul li {
 .menu-item-has-children::after {
   position: absolute;
   right: 5px;
-  top: 20px;
+  top: 23px;
   display: inline-block;
   content: "\f107";
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
+  font-size: small;
   color: #999;
-  transition: all 0.5s ease;
 }
 
 .dropdown-menu {
@@ -181,6 +181,12 @@ li a.searchIcon {
   line-height: 45px;
   transition: all 0.5s ease;
 }
+
+/* mentor chỉnh hộ
+li a.searchIcon span {
+  width: 15px;
+  height: 16px;
+} */
 
 ul .navSearch:hover a.searchIcon {
   background-color: #189a46;
@@ -366,6 +372,18 @@ ul .navSearch:hover a.searchIcon {
   box-sizing: border-box;
   border-radius: 50%;
 }
+
+/* CAROUSEL */
+.carousel .container-fuild{
+  position: relative;
+}
+
+.owl-carousel .owl-stage-outer .owl-stage {
+    transform: translate3d(-8995px, 0px, 0px);
+    transition: all 1s ease 0s;
+    width: 14392px;
+}
+
 
 
 

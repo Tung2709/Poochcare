@@ -36,6 +36,22 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- BOOSTRAP CSS -->
     <link
       rel="stylesheet"
@@ -44,8 +60,11 @@
       crossorigin="anonymous"
     />
 
-    <!-- THEME LIGHT AND DARK -->
-    <!-- <link rel="stylesheet" href="./js/theme.js"> -->
+    <!-- SLICK CSS -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
@@ -119,9 +138,11 @@
               </li>
               <div id="search" class="pop-overlay">
                 <div class="searchPopup">
-                  <form action="https://wp.w3layouts.com/poochcare/" class="d-sm-flex" >
+                  <form
+                    action="https://wp.w3layouts.com/poochcare/"
+                    class="d-sm-flex"
+                  >
                     <input
-                      
                       type="search"
                       placeholder="Search..."
                       aria-label="Search"
@@ -144,7 +165,7 @@
             <nav class="navigation">
               <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox">
+                  <input type="checkbox" id="checkbox" />
                   <div class="mode-container">
                     <i class="gg-sun"></i>
                     <i class="gg-moon"></i>
@@ -156,7 +177,46 @@
         </nav>
       </div>
     </header>
-    <section class="carousel"></section>
+
+    <!-- CAROUSEL -->
+    <section class="carousel">
+      <div class="container-fuild">
+        <div class="owl-carousel">
+          <div>
+            <h1>Quality Things For Loving Pets</h1>
+            <p>For The Love Of Pets</p>
+            <div class="button">
+              <a href="" class="btn">Read More</a>
+              <a href="" class="btn">Contact Us</a>
+            </div>
+          </div>
+          <div>
+            <h1>Quality Things For Loving Pets</h1>
+            <p>For The Love Of Pets</p>
+            <div class="button">
+              <a href="" class="btn">Read More</a>
+              <a href="" class="btn">Contact Us</a>
+            </div>
+          </div>
+          <div>
+            <h1>Quality Things For Loving Pets</h1>
+            <p>For The Love Of Pets</p>
+            <div class="button">
+              <a href="" class="btn">Read More</a>
+              <a href="" class="btn">Contact Us</a>
+            </div>
+          </div>
+          <div>
+            <h1>Quality Things For Loving Pets</h1>
+            <p>For The Love Of Pets</p>
+            <div class="button">
+              <a href="" class="btn">Read More</a>
+              <a href="" class="btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="aboutUs"></section>
     <section class="service"></section>
     <section class="offer"></section>
@@ -179,7 +239,6 @@
       crossorigin="anonymous"
     ></script>
 
-
     <script src="./js/theme.js"></script>
 
     <!-- WOW JS -->
@@ -191,6 +250,59 @@
     ></script>
     <script>
       new WOW().init();
+    </script>
+    <!-- CHANGE HEIGHT HEADER SCROLL -->
+    <script>
+      // When the user scrolls down 50px from the top of the document, resize the header's font size
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("siteHeader").style.height = "80px";
+        } else {
+          document.getElementById("siteHeader").style.height = "90px";
+        }
+      }
+    </script>
+    <!-- SLICK JS -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".one-time").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          autoplay:true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script> -->
+    <!-- OWL CAROUSEL -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          items: 1,
+          loop: true,
+          center: true,
+          autoplay: false,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+        });
+      });
     </script>
   </body>
 </html>
