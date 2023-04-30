@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poochcare</title>
+    <title>
+      Poochcare Animals and pets – Just another RoverThemes Demo Sites site
+    </title>
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -18,17 +20,12 @@
     <link rel="stylesheet" href="./css/Flaticon.woff2" />
     <!-- GG FONT -->
     <link href="https://css.gg/css" rel="stylesheet" />
+
+    <!-- FONT JOST -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;300;400;500;600;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- FONT NUNITO -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -41,6 +38,22 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- OWL CAROUSEL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- BOOSTRAP CSS -->
     <link
       rel="stylesheet"
@@ -48,20 +61,183 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+
+    <!-- SLICK CSS -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <!-- Add the slick-theme.css if you want default styling -->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/> -->
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
-    <section class="header">
-      <!-- copy lại  -->
+  <body id="myBody">
+    <header id="siteHeader" class="mainHeader">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg p-0">
+          <a class="navbar-brand" href="https://wp.w3layouts.com/poochcare/"
+            >Pooch Care</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#headerNavbar"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="headerNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown menu-item-has-children">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Blog Posts</a>
+                  <a class="dropdown-item" href="#">Landing page</a>
+                  <!-- <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+
+              <!-- <li class="nav-item">
+					  <a class="nav-link disabled">Disabled</a>
+					</li> -->
+            </ul>
+
+            <ul class="navbar-nav searchRight mt-lg-0 mt-2">
+              <li class="nav-item navSearch">
+                <a href="#search" class="btn searchIcon">
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                </a>
+              </li>
+              <div id="search" class="pop-overlay">
+                <div class="searchPopup">
+                  <form
+                    action="https://wp.w3layouts.com/poochcare/"
+                    class="d-sm-flex"
+                  >
+                    <input
+                      type="search"
+                      placeholder="Search..."
+                      aria-label="Search"
+                      required="required"
+                      autofocus
+                    />
+                    <button
+                      class="btn btn-outline-success my-2 my-sm-0"
+                      type="submit"
+                    >
+                      Search
+                    </button>
+                    <a class="close" href="#url">×</a>
+                  </form>
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="mobile-position DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- CAROUSEL -->
+    <div class="carousel">
+      <div class="owl-carousel owl-one">
+        <div class="item">
+          <div class="carouselInfo carouselView">
+            <div class="container">
+              <div class="carouselContent text-left">
+                <h5>Quality Things For Loving Pets</h5>
+                <p>Keeps Your Pet Smiling</p>
+                <a href="" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  >Read More</a
+                >
+                <a href="" class="btn btn-style border-btn mt-sm-5 mt-4"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="carouselInfo carouselView">
+            <div class="container">
+              <div class="carouselContent text-left">
+                <h5>Delivering happiness for Pets</h5>
+                <p>For the love of pets </p>
+                <a href="" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  >Read More</a
+                >
+                <a href="" class="btn btn-style border-btn mt-sm-5 mt-4"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div> 
+          </div>
+          </div>
     </section>
-    <section class="carousel"></section>
+    <section class="aboutUs">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nam ea
+        accusantium magni ipsa commodi excepturi id ad nihil molestias deleniti
+        possimus rerum velit dolorum quae facere quaerat asperiores eos
+        reiciendis pariatur. Ad, culpa quasi nesciunt architecto facilis dolorum
+        a tempora hic illum alias, et possimus eaque iusto. Sit dolorum
+        quibusdam repudiandae eaque laborum dolor consequatur, dicta recusandae
+        eos consectetur dolorem similique ea amet dignissimos ducimus! Ipsa
+        cupiditate magnam harum a optio, consectetur quo repellat natus velit!
+        Provident at ullam minus ea iusto rem, doloribus deserunt veniam
+        praesentium eveniet modi non earum culpa voluptatem rerum voluptates
+        veritatis ducimus placeat vitae!
+      </p>
+    </section>
     <section class="service"></section>
-    <section class="company"></section>
+    <section class="offer"></section>
     <section class="number"></section>
-    <section class="article"></section>
-    <section class="question"></section>
-    <section class="project"></section>
+    <section class="plan"></section>
+    <section class="nutrition"></section>
     <section class="feedback"></section>
     <section class="community"></section>
     <!-- hoài code típ  -->
@@ -122,6 +298,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="./js/theme.js"></script>
+
     <!-- WOW JS -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -131,6 +309,101 @@
     ></script>
     <script>
       new WOW().init();
+    </script>
+    <!-- MENU JS -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("siteHeader").style.height = "80px";
+        } else {
+          document.getElementById("siteHeader").style.height = "90px";
+        }
+      }
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 20) {
+          $("#siteHeader").addClass("fixedTop");
+        } else {
+          $("#siteHeader").removeClass("fixedTop");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
+    </script>
+    <!-- SLICK JS -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".one-time").slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          autoplay:true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script> -->
+    <!-- OWL CAROUSEL -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: true,
+            },
+            1000: {
+              items: 1,
+              nav: true,
+            },
+          },
+        });
+      });
     </script>
   </body>
 </html>
