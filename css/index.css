@@ -4,7 +4,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-<<<<<<< HEAD
 body {
   font-family: "Jost", sans-serif;
   color: #696969;
@@ -36,8 +35,7 @@ h2 {
   color: black;
   text-transform: capitalize;
 }
-h3 {
-=======
+
 /* html,
 body {
   color: #404040;
@@ -85,7 +83,6 @@ h6 {
 }
 
 .h6Title {
->>>>>>> main
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
@@ -93,7 +90,6 @@ h6 {
   letter-spacing: 1px;
   color: #f53626;
 }
-<<<<<<< HEAD
 h4 {
   color: #fff;
   font-size: 20px;
@@ -166,8 +162,7 @@ hr {
   padding: 0;
 }
 .copyright span {
-  color: #f53626;
-=======
+  color: #f53626;}
 
 /* Paragraph */
 p {
@@ -670,5 +665,4 @@ ul .navSearch:hover a.searchIcon {
   .navbar-expand-lg .navbar-nav .nav-item {
     padding: 0 10px;
   }
->>>>>>> main
 }
