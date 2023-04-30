@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -70,7 +70,7 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body id="myBody">
-    <header id="siteHeader" class="mainHeader fixedTop">
+    <header id="siteHeader" class="mainHeader">
       <div class="container">
         <nav class="navbar navbar-expand-lg p-0">
           <a class="navbar-brand" href="https://wp.w3layouts.com/poochcare/"
@@ -179,45 +179,58 @@
     </header>
 
     <!-- CAROUSEL -->
-    <section class="carousel">
-      <div class="container-fuild">
-        <div class="owl-carousel">
-          <div>
-            <h1>Quality Things For Loving Pets</h1>
-            <p>For The Love Of Pets</p>
-            <div class="button">
-              <a href="" class="btn">Read More</a>
-              <a href="" class="btn">Contact Us</a>
-            </div>
-          </div>
-          <div>
-            <h1>Quality Things For Loving Pets</h1>
-            <p>For The Love Of Pets</p>
-            <div class="button">
-              <a href="" class="btn">Read More</a>
-              <a href="" class="btn">Contact Us</a>
-            </div>
-          </div>
-          <div>
-            <h1>Quality Things For Loving Pets</h1>
-            <p>For The Love Of Pets</p>
-            <div class="button">
-              <a href="" class="btn">Read More</a>
-              <a href="" class="btn">Contact Us</a>
-            </div>
-          </div>
-          <div>
-            <h1>Quality Things For Loving Pets</h1>
-            <p>For The Love Of Pets</p>
-            <div class="button">
-              <a href="" class="btn">Read More</a>
-              <a href="" class="btn">Contact Us</a>
+    <div class="carousel">
+      <div class="owl-carousel owl-one">
+        <div class="item">
+          <div class="carouselInfo carouselView">
+            <div class="container">
+              <div class="carouselContent text-left">
+                <h5>Quality Things For Loving Pets</h5>
+                <p>Keeps Your Pet Smiling</p>
+                <a href="" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  >Read More</a
+                >
+                <a href="" class="btn btn-style border-btn mt-sm-5 mt-4"
+                  >Contact Us</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="item">
+          <div class="carouselInfo carouselView">
+            <div class="container">
+              <div class="carouselContent text-left">
+                <h5>Delivering happiness for Pets</h5>
+                <p>For the love of pets </p>
+                <a href="" class="btn btn-style btn-white mt-sm-5 mt-4 mr-2"
+                  >Read More</a
+                >
+                <a href="" class="btn btn-style border-btn mt-sm-5 mt-4"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div> 
+          </div>
+          </div>
     </section>
-    <section class="aboutUs"></section>
+    <section class="aboutUs">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nam ea
+        accusantium magni ipsa commodi excepturi id ad nihil molestias deleniti
+        possimus rerum velit dolorum quae facere quaerat asperiores eos
+        reiciendis pariatur. Ad, culpa quasi nesciunt architecto facilis dolorum
+        a tempora hic illum alias, et possimus eaque iusto. Sit dolorum
+        quibusdam repudiandae eaque laborum dolor consequatur, dicta recusandae
+        eos consectetur dolorem similique ea amet dignissimos ducimus! Ipsa
+        cupiditate magnam harum a optio, consectetur quo repellat natus velit!
+        Provident at ullam minus ea iusto rem, doloribus deserunt veniam
+        praesentium eveniet modi non earum culpa voluptatem rerum voluptates
+        veritatis ducimus placeat vitae!
+      </p>
+    </section>
     <section class="service"></section>
     <section class="offer"></section>
     <section class="number"></section>
@@ -251,9 +264,8 @@
     <script>
       new WOW().init();
     </script>
-    <!-- CHANGE HEIGHT HEADER SCROLL -->
+    <!-- MENU JS -->
     <script>
-      // When the user scrolls down 50px from the top of the document, resize the header's font size
       window.onscroll = function () {
         scrollFunction();
       };
@@ -268,6 +280,30 @@
           document.getElementById("siteHeader").style.height = "90px";
         }
       }
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 20) {
+          $("#siteHeader").addClass("fixedTop");
+        } else {
+          $("#siteHeader").removeClass("fixedTop");
+        }
+      });
+
+      //Main navigation Active Class Add Remove
+      $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+      });
+      $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+          $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+          if ($(window).width() > 991) {
+            $("header").removeClass("active");
+          }
+        });
+      });
     </script>
     <!-- SLICK JS -->
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -293,14 +329,33 @@
     ></script>
     <script>
       $(document).ready(function () {
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-          items: 1,
+        $(".owl-one").owlCarousel({
           loop: true,
-          center: true,
-          autoplay: false,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: true,
+            },
+            1000: {
+              items: 1,
+              nav: true,
+            },
+          },
         });
       });
     </script>
