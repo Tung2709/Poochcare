@@ -7,7 +7,7 @@
 body {
   font-family: "Jost", sans-serif;
   color: #696969;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 28px;
 }
 .container {
@@ -364,12 +364,6 @@ li a.searchIcon {
   transition: all 0.5s ease;
 }
 
-/* mentor chỉnh hộ
-li a.searchIcon span {
-  width: 15px;
-  height: 16px;
-} */
-
 ul .navSearch:hover a.searchIcon {
   background-color: #189a46;
   color: white;
@@ -583,7 +577,7 @@ ul .navSearch:hover a.searchIcon {
   background-size: cover;
 }
 
-.owl-carousel .carouselInfo:nth-last-of-type(2) {
+.owl-carousel .item-2 .carouselInfo {
   background-image: url(../img/banner2.jpg);
   background-size: cover;
 }
