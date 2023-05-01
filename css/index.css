@@ -951,6 +951,28 @@ ul .navSearch:hover a.searchIcon {
   padding: 2em 2.5em 3.5em;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #189A46;
+  border-color: #189A46;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #116E32;
+  border-color: #116E32;
+  box-shadow: 0 0 0 0.2rem rgba(15, 162, 67, 0.65);
+}
+
+.w3l-pricing-7-main .pric-7-2 .w3l-pricing-7 {
+  padding: 3.5em 2.5em;
+  border-left: 0;
+}
+
 /* FOOTER  */
 .footer {
   background-color: #111111;
