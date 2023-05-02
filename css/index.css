@@ -995,16 +995,23 @@ ul .navSearch:hover a.searchIcon {
 .footer {
   background-color: #111111;
 }
+
 .footer__section {
   display: flex;
-  padding-top: 30px;
+  padding-top: 34px;
 }
 .footer__item1 {
   width: 100%;
   padding: 30px 0 30px 0;
 }
-.footer__item1 p {
-  line-height: 33px;
+
+.footer__item h4, .footer__item1 h4{
+  margin-bottom: 25px;
+}
+
+.footer__item1 p,.footer__item p {
+  line-height: 28px;
+  font-size: 16px;
 }
 .footer__icon {
   /* padding: 10px 20px 0 0; */
@@ -1017,6 +1024,11 @@ ul .navSearch:hover a.searchIcon {
   width: 30%;
   padding: 30px 55px 30px 0;
 }
+
+.footer__item ul li, .footer__item1 p{
+  margin-bottom: 6px;
+}
+
 .footer__item ul li a {
   margin: 0;
   padding: 0;
@@ -1037,6 +1049,11 @@ ul .navSearch:hover a.searchIcon {
   padding: 15px 0 20px 0;
   text-align: center;
 }
+
+.copyright p{
+  font-size: 16px;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -1047,6 +1064,7 @@ hr {
 }
 .copyright span {
   color: #f53626;
+  opacity: 0.9;
 }
 
 @media (min-width: 576px) {
