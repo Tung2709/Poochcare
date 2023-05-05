@@ -36,14 +36,12 @@ h2 {
   text-transform: capitalize;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 2em;
-  letter-spacing: 1px;
-  color: #f53626;
+@media (max-width: 1200px){
+  h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
 }
+}
+
 
 .hny-title {
   font-size: 40px;
@@ -585,7 +583,7 @@ ul .navSearch:hover a.searchIcon {
   color: #404040;
 }
 
-.gg-sun {
+.sun {
   position: relative;
   transform: scale(var(--ggs, 1));
   height: 24px;
@@ -601,12 +599,12 @@ ul .navSearch:hover a.searchIcon {
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
 }
-.gg-sun:before {
+.sun:before {
   transform: rotate(-45deg);
 }
 
-.gg-sun:after,
-.gg-sun:before {
+.sun:after,
+.sun:before {
   content: "";
   position: absolute;
   height: 2px;
@@ -616,33 +614,33 @@ ul .navSearch:hover a.searchIcon {
   top: 5px;
 }
 
-.gg-sun:after {
+.sun:after {
   transform: rotate(45deg);
 }
 
-.gg-sun,
-.gg-sun:after,
-.gg-sun:before {
+.sun,
+.sun:after,
+.sun:before {
   box-sizing: border-box;
   display: block;
   width: 24px;
 }
 
-.dark .gg-sun {
+.dark .sun {
   color: #404040;
 }
 
-.mode-container i.gg-sun,
-.dark .mode-container i.gg-moon {
+.mode-container i.sun,
+.dark .mode-container i.moon {
   display: none;
 }
 
-.mode-container i.gg-moon,
-.dark .mode-container i.gg-sun {
+.mode-container i.moon,
+.dark .mode-container i.sun {
   display: block;
 }
 
-.gg-moon {
+.moon {
   overflow: hidden;
   position: relative;
   transform: rotate(-135deg) scale(var(--ggs, 1));
@@ -652,7 +650,7 @@ ul .navSearch:hover a.searchIcon {
   border-bottom: 2px solid transparent;
 }
 
-.gg-moon:after {
+.moon:after {
   content: "";
   position: absolute;
   width: 12px;
@@ -663,8 +661,8 @@ ul .navSearch:hover a.searchIcon {
   left: 2px;
 }
 
-.gg-moon,
-.gg-moon:after {
+.moon,
+.moon:after {
   display: block;
   box-sizing: border-box;
   border-radius: 50%;
@@ -909,24 +907,23 @@ ul .navSearch:hover a.searchIcon {
   border-radius: 10px;
 }
 
-.featureRight .contentRight .contentRightIcon {
+.featureRight .contentRight .contentRightIcon .icon  {
   font-size: 44px;
   text-align: center;
   color: #189a46;
 }
 
-.featureRight .contentRight .contentRightIcon i {
+.featureRight .contentRight .contentRightIcon span {
   margin-top: 4px;
   vertical-align: super;
 }
 
-.featureRight .contentRight .contentRightInfo {
+.featureRight .contentRightInfo {
   padding-left: 0;
 }
 
-.featureRight .contentRight .contentRightInfo h6 {
+.featureText  h6 {
   margin: 0px 0 6px 0;
-  line-height: 1.2;
 }
 
 .featureRight .contentRight .contentRightInfo h6 a {
@@ -950,7 +947,7 @@ ul .navSearch:hover a.searchIcon {
 }
 
 @media (max-width: 767px) {
-  .features .contentRightIcon {
+  .features .contentRightIcon .icon {
     margin-bottom: 14px;
   }
 
@@ -962,9 +959,12 @@ ul .navSearch:hover a.searchIcon {
     padding-left: 15px;
   }
 
-  .features .contentRightIcon i {
+  .features .contentRightIcon .icon span  {
     margin-top: 0px;
     vertical-align: middle;
+  }
+  .featureRight .contentRight .contentRightInfo h6 a{
+    font-size: 22px;
   }
 }
 
@@ -997,9 +997,10 @@ ul .navSearch:hover a.searchIcon {
 .team .team-wrap .column h3.name-member {
   margin-top: 16px;
   text-transform: capitalize;
+  letter-spacing: 0px;
 }
 
-.team .team-wrap .column h3.name-member a {
+.team h3.name-member a {
   font-size: 22px;
   line-height: 26px;
   color: #000c04;

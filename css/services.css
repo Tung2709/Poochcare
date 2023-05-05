@@ -51,6 +51,7 @@ h3 {
   line-height: 48px;
   text-transform: capitalize;
   color: #000c04;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 1080px) {
@@ -585,7 +586,7 @@ ul .navSearch:hover a.searchIcon {
   color: #404040;
 }
 
-.gg-sun {
+.sun {
   position: relative;
   transform: scale(var(--ggs, 1));
   height: 24px;
@@ -601,12 +602,12 @@ ul .navSearch:hover a.searchIcon {
   box-shadow: inset 0 0 0 2px;
   border: 6px solid transparent;
 }
-.gg-sun:before {
+.sun:before {
   transform: rotate(-45deg);
 }
 
-.gg-sun:after,
-.gg-sun:before {
+.sun:after,
+.sun:before {
   content: "";
   position: absolute;
   height: 2px;
@@ -616,33 +617,33 @@ ul .navSearch:hover a.searchIcon {
   top: 5px;
 }
 
-.gg-sun:after {
+.sun:after {
   transform: rotate(45deg);
 }
 
-.gg-sun,
-.gg-sun:after,
-.gg-sun:before {
+.sun,
+.sun:after,
+.sun:before {
   box-sizing: border-box;
   display: block;
   width: 24px;
 }
 
-.dark .gg-sun {
+.dark .sun {
   color: #404040;
 }
 
-.mode-container i.gg-sun,
-.dark .mode-container i.gg-moon {
+.mode-container i.sun,
+.dark .mode-container i.moon {
   display: none;
 }
 
-.mode-container i.gg-moon,
-.dark .mode-container i.gg-sun {
+.mode-container i.moon,
+.dark .mode-container i.sun {
   display: block;
 }
 
-.gg-moon {
+.moon {
   overflow: hidden;
   position: relative;
   transform: rotate(-135deg) scale(var(--ggs, 1));
@@ -652,7 +653,7 @@ ul .navSearch:hover a.searchIcon {
   border-bottom: 2px solid transparent;
 }
 
-.gg-moon:after {
+.moon:after {
   content: "";
   position: absolute;
   width: 12px;
@@ -663,8 +664,8 @@ ul .navSearch:hover a.searchIcon {
   left: 2px;
 }
 
-.gg-moon,
-.gg-moon:after {
+.moon,
+.moon:after {
   display: block;
   box-sizing: border-box;
   border-radius: 50%;
