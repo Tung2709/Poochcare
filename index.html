@@ -61,6 +61,27 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <!-- slick  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./JS/Magnific-Popup-master/dist/magnific-popup.css"
+    />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -83,7 +104,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon icon-expand  fa fa-bars"></span>
+            <span class="navbar-toggler-icon icon-expand fa fa-bars"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="headerNavbar">
@@ -516,10 +537,244 @@
         </div>
       </div>
     </section>
-    <section class="nutrition"></section>
+
     <section class="feedback"></section>
     <section class="community"></section>
-    <!-- hoài code típ  -->
+    <!-- media video  -->
+    <section class="nutrition">
+      <div class="container">
+        <div class="nutrition__section">
+          <div class="nutrition__title">
+            <h3>BETTER PET NUTRITION.</h3>
+            <h2>The Finest Fresh Food And All Your Pet Needs.</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+              dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.
+            </p>
+          </div>
+          <div class="nutrition__banner">
+            <img src="./images/banner2.jpg" alt="" />
+            <!-- cái nút  -->
+            <div class="nutrition__icon">
+              <a
+                href="#small-dialog"
+                class="open-popup-link popup-with-zoom-anim"
+              >
+                <i class="fa-solid fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <iframe
+              src="https://player.vimeo.com/video/101587706"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="customer__layout">
+      <div class="container">
+        <div class="customer__section">
+          <div class="customer__title">
+            <h3>TESTIMONIALS</h3>
+            <h2>Happy Clients & Feedbacks</h2>
+          </div>
+
+          <br />
+          <br />
+
+          <div
+            id="carouselId"
+            class="carousel slide"
+            data-ride="carousel"
+            data-interval="false"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselId"
+                data-slide-to="0"
+                class="active button-slide"
+              ></li>
+              <li
+                data-target="#carouselId"
+                data-slide-to="1"
+                class="button-slide"
+              ></li>
+              <li
+                data-target="#carouselId"
+                data-slide-to="2"
+                class="button-slide"
+              ></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="customer__content">
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f1.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f2.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="customer__content2">
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f3.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f4.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="customer__content2">
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f2.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer__item">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Ut perferendis facilis nisi molestias neque optio deserunt
+                      reiciendis pariatur nam blanditiis, aspernatur dolorem
+                      iusto autem possimus modi nobis numquam alias minus.
+                    </p>
+                    <div class="customer__info">
+                      <div class="avt1">
+                        <img src="./images/f3.jpg" alt="" />
+                      </div>
+                      <div class="avt2">
+                        <h5>John Wilson</h5>
+                        <p>expamle city</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Updated -->
+    <section class="w3l-bottom py-5">
+      <div class="container py-md-4 py-3 text-center HPSubscribe">
+        <div class="row my-lg-4 mt-4">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="subcribe mx-auto">
+              <div class="bottom__title text-center mx-auto">
+                <h2 class="hny-title">Stay Updated!</h2>
+                <p class="my-3">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et
+                  ultrices posuere cubilia Curae; Nulla mollis dapibus nunc, ut
+                  rhoncus turpis sodales quis. Integer sit amet mattis quam.
+                </p>
+              </div>
+              <form action method="post" class="subcribe-wthree pt-2 mt-5">
+                <div class="d-md-flex flex-wrap subscribe-wthree-field row">
+                  <div class="col-9">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="staticEmail2"
+                      style="height: 54px; border-radius: 10px"
+                      placeholder="Enter your email..."
+                    />
+                  </div>
+                  <div class="col-3" style="text-align: start; padding: 0">
+                    <button class="btn btn-style btn-primary" type="submit">
+                      Subscribe
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
     <section class="footer">
       <div class="container">
         <div class="footer__section">
@@ -535,31 +790,33 @@
               <i class="fa-brands fa-google"></i>
             </div>
           </div>
-          <div class="footer__item">
-            <h4>Archives</h4>
-            <ul>
-              <li>
-                <a href="#">December 2020</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__item">
-            <h4>Categories</h4>
-            <ul>
-              <li><a href="#">Animals</a></li>
-              <li><a href="#">Pets</a></li>
-              <li><a href="#">Pets care</a></li>
-              <li><a href="#">Uncategorized</a></li>
-            </ul>
-          </div>
-          <div class="footer__item">
-            <h4>Meta</h4>
-            <ul>
-              <li><a href="#">Log in</a></li>
-              <li><a href="#">Entries feed</a></li>
-              <li><a href="#">Comments feed</a></li>
-              <li><a href="#">WordPress.org</a></li>
-            </ul>
+          <div class="footer-right">
+            <div class="footer__item">
+              <h4>Archives</h4>
+              <ul>
+                <li>
+                  <a href="#">December 2020</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__item">
+              <h4>Categories</h4>
+              <ul>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Pets care</a></li>
+                <li><a href="#">Uncategorized</a></li>
+              </ul>
+            </div>
+            <div class="footer__item">
+              <h4>Meta</h4>
+              <ul>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Entries feed</a></li>
+                <li><a href="#">Comments feed</a></li>
+                <li><a href="#">WordPress.org</a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <hr />
@@ -568,7 +825,16 @@
         </div>
       </div>
     </section>
-
+    <section class="footer">
+      <footer class="footer"></footer>
+    </section>
+    <!-- link slick js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- BOOSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -663,7 +929,25 @@
         });
       });
     </script>
-    <!-- COUNTING UP -->
+    <!-- nut js  -->
+
+    <script src="./JS/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+          fixedContentPos: false,
+          fixedBgPos: true,
+          overflowY: "auto",
+          closeBtnInside: true,
+          preloader: false,
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
+      <!-- COUNTING UP -->
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
       integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
@@ -674,6 +958,21 @@
 
     <script>
       $(".counter").countUp();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- link slick js  -->
+    <script>
+      $(".customer__content").slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      });
     </script>
   </body>
 </html>
