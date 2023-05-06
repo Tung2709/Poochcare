@@ -61,15 +61,134 @@ p {
 /* phần Get In Touch With Us  */
 .contact__title {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .contact__content {
   display: flex;
 }
-.contact__form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+.contact__left {
+  width: 70%;
+  position: relative;
+}
+.contact__right {
+  width: 30%;
+}
+.form1 {
+  margin-right: 45px;
+}
+.form1 input {
+  width: 355px;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.form2 input {
+  width: 720px;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.form3 input {
+  width: 720px;
+  height: 130px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* .form3 input[type="text"]::placeholder {
+  text-align: top;
+} */
+.contact__left button {
+  background-color: #189a46;
+  color: #fff;
+  padding: 12px 35px;
+  border-radius: 7px;
+  border: none;
+  position: absolute;
+  right: 56px;
 }
 .contact__form input {
+  border: 1px solid transparent;
+  box-shadow: #189a46;
+  transition: 0.5s;
+  box-shadow: 0 0 60px 0 #ccc;
+  outline: none;
+}
+.contact__form input:hover {
+  border: #189a46 1px solid;
+}
+.contact__form input:focus {
+  border: #189a46 1px solid;
+}
+
+.contact__right h5 {
+  color: black;
+}
+.contact__right i {
+  color: #189a46;
+}
+.contact__address {
+  margin-bottom: 30px;
+}
+/* gg map  */
+.gg__map {
+  padding-top: 80px;
+}
+/* footer  */
+.footer {
+  background-color: #111111;
+  padding: 0;
+}
+.footer__section {
+  display: flex;
+  padding-top: 30px;
+}
+.footer__item1 {
+  width: 100%;
+  padding: 30px 0 30px 0;
+}
+.footer__item1 p {
+  line-height: 33px;
+}
+.footer__icon {
+  /* padding: 10px 20px 0 0; */
+}
+.footer__icon i {
+  font-size: 15px;
+  padding: 15px 20px 0 0;
+}
+.footer__item {
+  width: 30%;
+  padding: 30px 55px 30px 0;
+}
+.footer__item ul li a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 33px;
+  color: #696969;
+  font-family: "Jost", sans-serif;
+}
+.footer__item a {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 33px;
+  color: #696969;
+  font-family: "Jost", sans-serif;
+}
+.copyright {
+  padding: 15px 0 20px 0;
+  text-align: center;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #1d1818;
+  margin: 1em 0;
+  padding: 0;
+}
+.copyright span {
+  color: #f53626;
 }
