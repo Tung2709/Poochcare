@@ -17,6 +17,9 @@ body {
   width: 90%;
   margin: auto;
 }
+.carouselContent {
+  max-width: 100% !important;
+}
 ul {
   list-style: none;
 }
@@ -72,15 +75,17 @@ p {
 .contact__left {
   width: 70%;
   position: relative;
+  height: 290px;
 }
 .contact__right {
   width: 30%;
 }
 .form1 {
-  margin-right: 63px;
+  width: 100%;
+  margin: 0;
 }
+
 .form1 input {
-  width: 355px;
   height: 55px;
   margin-bottom: 15px;
   border-radius: 10px;
@@ -119,7 +124,7 @@ p {
   border-radius: 10px;
   position: absolute;
   bottom: -33px;
-  right: 53px;
+  right: 41px;
 }
 
 .contact__left button:hover {
@@ -129,6 +134,8 @@ p {
 .contact__form {
   position: absolute;
   right: 0;
+  padding-right: 43px;
+  width: 100%;
 }
 
 .contact__form input {
@@ -164,6 +171,8 @@ p {
   outline: none;
   padding-left: 20px;
   background-color: #f9f7fe;
+  width: 100%;
+  font-size: 16px;
 }
 .textarea-form:focus {
   border: #189a46 1px solid;
