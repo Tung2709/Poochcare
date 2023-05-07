@@ -9,7 +9,6 @@ body {
   color: #696969;
   font-size: 1rem;
   line-height: 1.5;
-  margin-bottom: 1.5em;
 }
 
 a {
@@ -1533,7 +1532,7 @@ hr {
 /* Responsive footer */
 @media only screen and (max-width: 678px) {
   .footer__section {
-    display: unset;
+    display: unset !important;
   }
   .footer__item1 {
     width: 100%;
