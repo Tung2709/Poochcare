@@ -1,3 +1,6 @@
+body {
+  margin-bottom: 1.5em;
+}
 .carouselContent {
   max-width: 100% !important;
 }
