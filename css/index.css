@@ -9,6 +9,7 @@ body {
   color: #696969;
   font-size: 1rem;
   line-height: 1.5;
+  margin-bottom: 1.5em;
 }
 
 a {
@@ -1784,4 +1785,18 @@ div#small-dialog iframe {
 .form-control:focus {
   color: #116e32;
   box-shadow: 0 0 0 0.2rem #82e5a5;
+}
+
+@media only screen and (max-width: 678px) {
+  .nutrition .containe {
+    width: unset !important;
+  }
+
+  .w3l-bottom .container {
+    width: 100%;
+  }
+
+  .nutrition .container {
+    width: 100%;
+  }
 }
