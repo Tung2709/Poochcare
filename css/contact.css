@@ -10,8 +10,9 @@ textarea {
 body {
   font-family: "Jost", sans-serif;
   color: #696969;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
   line-height: 28px;
+  margin-bottom: 1.5em;
 }
 .container {
   width: 90%;
@@ -280,6 +281,18 @@ hr {
     width: 100%;
   }
 }
-@media only screen and (max-width: 564px) {
+@media only screen and (max-width: 992px) {
+  .contact__content {
+    display: unset;
+  }
+  .contact__left {
+    width: 100% !important;
+    padding: 0;
+  }
+  .contact__right {
+    width: 100% !important;
+    margin-top: 80px;
+    padding: 0;
+  }
 }
 /* End responsive footer */
