@@ -367,7 +367,7 @@ nav ul li {
   color: #dddddd;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item.active a,
+.navbar-expand-lg .navbar-nav .nav-item.active a.nav-link,
 .navbar-expand-lg .navbar-nav .nav-item a.nav-link:hover {
   color: #189a46;
 }
@@ -438,6 +438,15 @@ a.dropdown-item {
   padding-top: 0;
   width: 100px;
   padding-bottom: 14px;
+}
+
+a.dropdown-item:hover{
+  background-color: white;
+}
+
+a.dropdown-item.active{
+  background-color: white;
+  color: #189a46;
 }
 
 .fixed-top {
