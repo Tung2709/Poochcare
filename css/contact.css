@@ -277,6 +277,9 @@ hr {
   .footer__item1 {
     width: 100%;
   }
+  .footer__item {
+    width: 100% !important;
+  }
   .footer-right {
     width: 100%;
   }
